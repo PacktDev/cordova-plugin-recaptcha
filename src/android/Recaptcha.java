@@ -1,7 +1,5 @@
 package com.packtpub;
 
-import android.support.annotation.*;
-
 import com.google.android.gms.common.api.ApiException;
 import com.google.android.gms.common.api.CommonStatusCodes;
 
@@ -55,7 +53,7 @@ public class Recaptcha extends CordovaPlugin {
                 .addOnFailureListener(cordova.getActivity(),
                     new OnFailureListener() {
                         @Override
-                        public void onFailure(@NonNull Exception e) {
+                        public void onFailure(Exception e) {
                             if (e instanceof ApiException) {
                                 // An error we know about occurred.
                                 ApiException apiException = (ApiException) e;
