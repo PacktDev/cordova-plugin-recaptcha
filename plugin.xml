@@ -18,6 +18,8 @@
     </js-module>
     <platform name="android">
         <framework src="com.google.android.gms:play-services-safetynet:+" />
+
+        <framework src="com.android.support:support-annotations:+" />
         
         <config-file target="config.xml" parent="/*">
             <feature name="Recaptcha">
